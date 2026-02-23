@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ShoppingCart, Instagram, Phone, Plus, Minus, X, Send, Sparkles, Package, MapPin } from 'lucide-react';
+import { ShoppingCart, Instagram, Phone, Plus, Minus, X, Send, Sparkles, MapPin } from 'lucide-react';
 
 interface Product {
   id: number;
@@ -316,14 +316,6 @@ function App() {
     ? products
     : products.filter(p => p.category === activeCategory);
 
-  const upcomingProducts = [
-    {
-      id: 100,
-      name: 'Combo Brochas',
-      image: 'https://images.pexels.com/photos/1115128/pexels-photo-1115128.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
-  ];
-
   const instagramHighlights = [
     { id: 1, title: 'Nuevos', image: 'https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=300' },
     { id: 2, title: 'Brochas', image: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=300' },
@@ -507,40 +499,6 @@ function App() {
                   <ShoppingCart className="w-5 h-5" />
                   Agregar al Carrito
                 </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Upcoming Products */}
-      <section className="container mx-auto px-4 py-16 bg-gradient-to-r from-pink-50 to-white rounded-3xl my-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-3 flex items-center justify-center gap-3">
-            <Package className="w-10 h-10 text-pink-500" />
-            Próximos Ingresos
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-600 mx-auto rounded-full"></div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {upcomingProducts.map(product => (
-            <div
-              key={product.id}
-              className="bg-white rounded-3xl shadow-lg overflow-hidden border-2 border-pink-100 relative"
-            >
-              <div className="relative overflow-hidden h-72">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover opacity-75"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-pink-600/80 to-transparent flex items-end justify-center pb-8">
-                  <span className="text-white text-2xl font-bold drop-shadow-lg">Próximamente</span>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-800 text-center">{product.name}</h3>
               </div>
             </div>
           ))}
