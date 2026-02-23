@@ -7,14 +7,14 @@ interface Product {
   price: number;
   image: string;
   inStock: boolean;
-  category: 'maquillaje' | 'accesorios';
+  category: 'maquillaje' | 'accesorios' | 'cuidado-personal';
 }
 
 interface CartItem extends Product {
   quantity: number;
 }
 
-type Category = 'all' | 'maquillaje' | 'accesorios';
+type Category = 'all' | 'maquillaje' | 'accesorios' | 'cuidado-personal';
 
 function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
@@ -24,14 +24,6 @@ function App() {
   const products: Product[] = [
     {
       id: 1,
-      name: 'Brocha de Maquillaje',
-      price: 100,
-      image: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'accesorios'
-    },
-    {
-      id: 2,
       name: 'Lip Matte Miss Bettylip',
       price: 150,
       image: 'https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -39,7 +31,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 3,
+      id: 2,
       name: 'Lip Matte Miss Lara (Claros)',
       price: 150,
       image: 'https://images.pexels.com/photos/3373714/pexels-photo-3373714.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -47,7 +39,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 4,
+      id: 3,
       name: 'Lip Matte Miss Lara (Oscuros)',
       price: 150,
       image: 'https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -55,7 +47,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 5,
+      id: 4,
       name: 'Rímel Voluminizador Larga Duración Sheglam',
       price: 3500,
       image: 'https://images.pexels.com/photos/3373730/pexels-photo-3373730.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -63,7 +55,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 6,
+      id: 5,
       name: 'Gloss Matilda',
       price: 4000,
       image: 'https://images.pexels.com/photos/3373714/pexels-photo-3373714.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -71,31 +63,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 7,
-      name: 'Protector Solar',
-      price: 5000,
-      image: 'https://images.pexels.com/photos/7428100/pexels-photo-7428100.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 8,
-      name: 'Parches para Ojos',
-      price: 3000,
-      image: 'https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 9,
-      name: 'Parches para Labios',
-      price: 3000,
-      image: 'https://images.pexels.com/photos/6621392/pexels-photo-6621392.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 10,
+      id: 6,
       name: 'Gloss Minitango con Ceramida',
       price: 5000,
       image: 'https://images.pexels.com/photos/2533384/pexels-photo-2533384.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -103,7 +71,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 11,
+      id: 7,
       name: 'Lip Gloss Olibolla',
       price: 4000,
       image: 'https://images.pexels.com/photos/5703044/pexels-photo-5703044.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -111,15 +79,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 12,
-      name: 'Protector Solar Factor 50',
-      price: 10000,
-      image: 'https://images.pexels.com/photos/4046718/pexels-photo-4046718.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 13,
+      id: 8,
       name: 'Combo Corrector y Bronzer',
       price: 4500,
       image: 'https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -127,47 +87,15 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 14,
-      name: 'Parches para Acné 72',
-      price: 6500,
-      image: 'https://images.pexels.com/photos/7755090/pexels-photo-7755090.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 15,
-      name: 'Contorno de Ojos Hidratante con Ácido Hialurónico',
-      price: 10000,
-      image: 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 16,
-      name: 'Parches para Acné 72 Unidades',
-      price: 8000,
-      image: 'https://images.pexels.com/photos/6621401/pexels-photo-6621401.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 17,
-      name: 'Máscara de Pestañas Sky High Definidora',
-      price: 5000,
-      image: 'https://images.pexels.com/photos/3686769/pexels-photo-3686769.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 18,
+      id: 9,
       name: 'Peine y Lápiz para Ceja',
       price: 4500,
       image: 'https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=400',
       inStock: true,
-      category: 'accesorios'
+      category: 'maquillaje'
     },
     {
-      id: 19,
+      id: 10,
       name: 'Rímel Marrón',
       price: 1500,
       image: 'https://images.pexels.com/photos/2587376/pexels-photo-2587376.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -175,7 +103,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 20,
+      id: 11,
       name: 'Rímel Voluminizador',
       price: 5000,
       image: 'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -183,23 +111,15 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 21,
-      name: 'Mascarillas para Puntos Negros',
-      price: 1500,
-      image: 'https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 22,
-      name: 'Gloss Hidratante Mágico Mariposa',
+      id: 12,
+      name: 'Hidratante Mágico Mariposa',
       price: 3500,
       image: 'https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=400',
       inStock: true,
       category: 'maquillaje'
     },
     {
-      id: 23,
+      id: 13,
       name: 'Paleta de Sombras Super Style',
       price: 6000,
       image: 'https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -207,23 +127,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 24,
-      name: 'Gel Hidratante de Aloe Vera',
-      price: 6500,
-      image: 'https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 25,
-      name: 'Fat Oils Hidratantes para Labios Miss Betty',
-      price: 3500,
-      image: 'https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true,
-      category: 'maquillaje'
-    },
-    {
-      id: 26,
+      id: 14,
       name: 'Lip Glow Oil Miss Betty',
       price: 4000,
       image: 'https://images.pexels.com/photos/5703055/pexels-photo-5703055.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -231,7 +135,7 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 27,
+      id: 15,
       name: 'Gloss Stitch Cereza',
       price: 4500,
       image: 'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -239,12 +143,172 @@ function App() {
       category: 'maquillaje'
     },
     {
-      id: 28,
+      id: 16,
       name: 'Labial Super Style Acabado Mate',
       price: 5000,
       image: 'https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&w=400',
       inStock: true,
       category: 'maquillaje'
+    },
+    {
+      id: 17,
+      name: 'Set Brochas x5',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 18,
+      name: 'Repuestos de Arqueadores',
+      price: 3000,
+      image: 'https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 19,
+      name: 'Set de Seis Perfiladores',
+      price: 6500,
+      image: 'https://images.pexels.com/photos/2533384/pexels-photo-2533384.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 20,
+      name: 'Peine para Peinar Pestañas',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/5069434/pexels-photo-5069434.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 21,
+      name: 'Broches Largos Mariposa',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/3738386/pexels-photo-3738386.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 22,
+      name: 'Peine para Cejas y Pestañas',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 23,
+      name: 'Set de 12 Peines Finos',
+      price: 10000,
+      image: 'https://images.pexels.com/photos/3373734/pexels-photo-3373734.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 24,
+      name: 'Brochas Flor',
+      price: 6000,
+      image: 'https://images.pexels.com/photos/1115128/pexels-photo-1115128.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 25,
+      name: 'Protector Solar',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/7428100/pexels-photo-7428100.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 26,
+      name: 'Parches para Labios',
+      price: 3000,
+      image: 'https://images.pexels.com/photos/6621392/pexels-photo-6621392.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 27,
+      name: 'Parches para Ojos',
+      price: 3000,
+      image: 'https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 28,
+      name: 'Protector Solar Factor 50',
+      price: 10000,
+      image: 'https://images.pexels.com/photos/4046718/pexels-photo-4046718.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 29,
+      name: 'Contorno de Ojos Hidratante con Ácido Hialurónico',
+      price: 10000,
+      image: 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 30,
+      name: 'Parches para Acné 72',
+      price: 6500,
+      image: 'https://images.pexels.com/photos/7755090/pexels-photo-7755090.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 31,
+      name: 'Parches para Acné 72 Unidades',
+      price: 8000,
+      image: 'https://images.pexels.com/photos/6621401/pexels-photo-6621401.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 32,
+      name: 'Mascarillas para Puntos Negros',
+      price: 1500,
+      image: 'https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 33,
+      name: 'Gel Hidratante de Aloe Vera',
+      price: 6500,
+      image: 'https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 34,
+      name: 'Perfume para Cartera Yara 35ml',
+      price: 4500,
+      image: 'https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 35,
+      name: 'Perfume Tubo de Cartera Yara Candy 35ml',
+      price: 4500,
+      image: 'https://images.pexels.com/photos/3738382/pexels-photo-3738382.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
+    },
+    {
+      id: 36,
+      name: 'Perfume Yara de Cartera 35ml',
+      price: 3500,
+      image: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'cuidado-personal'
     }
   ];
 
@@ -403,6 +467,16 @@ function App() {
               }`}
             >
               Accesorios
+            </button>
+            <button
+              onClick={() => setActiveCategory('cuidado-personal')}
+              className={`px-8 py-3 rounded-full font-semibold transition-all ${
+                activeCategory === 'cuidado-personal'
+                  ? 'bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-lg scale-105'
+                  : 'bg-white text-pink-600 border-2 border-pink-200 hover:border-pink-400'
+              }`}
+            >
+              Cuidado Personal
             </button>
           </div>
         </div>
