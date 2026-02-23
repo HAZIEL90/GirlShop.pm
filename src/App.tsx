@@ -564,7 +564,7 @@ function App() {
             <p className="text-sm opacity-90">📍 Perito Moreno, Santa Cruz, Argentina</p>
           </div>
           <div className="text-center text-sm opacity-75 border-t border-white/30 pt-6">
-            <p>© 2024 girlsshop.pm - Todo lo que una girl necesita 🎀✨</p>
+            <p>© 2026 girlsshop.pm - Todo lo que una girl necesita 🎀✨</p>
           </div>
         </div>
       </footer>
