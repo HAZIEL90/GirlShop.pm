@@ -170,7 +170,7 @@ function App() {
       id: 19,
       name: 'Set de Seis Perfiladores',
       price: 6500,
-      image: 'https://images.pexels.com/photos/2533384/pexels-photo-2533384.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Set de Seis Perfiladores/WhatsApp_Image_2026-02-23_at_11.33.34_AM.jpeg',
       inStock: true,
       category: 'accesorios'
     },
@@ -178,7 +178,7 @@ function App() {
       id: 20,
       name: 'Peine para Peinar Pestañas',
       price: 5000,
-      image: 'https://images.pexels.com/photos/5069434/pexels-photo-5069434.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Peine para Peinar Pestañas/WhatsApp_Image_2026-02-23_at_11.33.34_AM_(1).jpeg',
       inStock: true,
       category: 'accesorios'
     },
@@ -186,7 +186,7 @@ function App() {
       id: 21,
       name: 'Broches Largos Mariposa',
       price: 5000,
-      image: 'https://images.pexels.com/photos/3738386/pexels-photo-3738386.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Broches Largos Mariposa/WhatsApp_Image_2026-02-23_at_11.33.35_AM_(1).jpeg',
       inStock: true,
       category: 'accesorios'
     },
@@ -194,7 +194,7 @@ function App() {
       id: 22,
       name: 'Peine para Cejas y Pestañas',
       price: 5000,
-      image: 'https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Peine para Cejas y Pestañas/WhatsApp_Image_2026-02-23_at_11.33.35_AM.jpeg',
       inStock: true,
       category: 'accesorios'
     },
@@ -202,7 +202,7 @@ function App() {
       id: 23,
       name: 'Set de 12 Peines Finos',
       price: 10000,
-      image: 'https://images.pexels.com/photos/3373734/pexels-photo-3373734.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Set de 12 Peines Finos/WhatsApp_Image_2026-02-23_at_11.33.35_AM_(2).jpeg',
       inStock: true,
       category: 'accesorios'
     },
