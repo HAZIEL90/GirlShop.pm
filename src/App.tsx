@@ -25,7 +25,7 @@ function App() {
     {
       id: 1,
       name: 'Lip Matte Miss Bettylip',
-      price: 150,
+      price: 4500,
       image: '/Lip Matte Miss Bettylip/WhatsApp_Image_2026-02-23_at_1.50.15_PM.jpeg',
       inStock: true,
       category: 'maquillaje'
@@ -33,7 +33,7 @@ function App() {
     {
       id: 2,
       name: 'Lip Matte Miss Lara (Claros)',
-      price: 150,
+      price: 4500,
       image: '/Lip Matte Miss Lara (Claros)/WhatsApp_Image_2026-02-23_at_1.50.15_PM_(2).jpeg',
       inStock: true,
       category: 'maquillaje'
@@ -41,7 +41,7 @@ function App() {
     {
       id: 3,
       name: 'Lip Matte Miss Lara (Oscuros)',
-      price: 150,
+      price: 4500,
       image: '/Lip Matte Miss Lara (Oscuros)/WhatsApp_Image_2026-02-23_at_1.50.16_PM.jpeg',
       inStock: true,
       category: 'maquillaje'
