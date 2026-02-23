@@ -90,7 +90,7 @@ function App() {
       id: 9,
       name: 'Peine y Lápiz para Ceja',
       price: 4500,
-      image: 'https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://bolt.new/api/upload/files%2F3621917-2026-02-23T17-27-14-996Z-WhatsApp_Image_2026-02-23_at_11.33.28_AM.jpeg',
       inStock: true,
       category: 'maquillaje'
     },
