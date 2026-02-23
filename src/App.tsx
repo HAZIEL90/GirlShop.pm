@@ -26,7 +26,7 @@ function App() {
       id: 1,
       name: 'Lip Matte Miss Bettylip',
       price: 150,
-      image: 'https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Lip Matte Miss Bettylip/WhatsApp_Image_2026-02-23_at_1.50.15_PM.jpeg',
       inStock: true,
       category: 'maquillaje'
     },
