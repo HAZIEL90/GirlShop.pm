@@ -130,7 +130,7 @@ function App() {
       id: 14,
       name: 'Lip Glow Oil Miss Betty',
       price: 4000,
-      image: 'https://images.pexels.com/photos/5703055/pexels-photo-5703055.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Lip Glow Oil Miss Betty/WhatsApp_Image_2026-02-23_at_11.33.31_AM.jpeg',
       inStock: true,
       category: 'maquillaje'
     },
@@ -138,7 +138,7 @@ function App() {
       id: 15,
       name: 'Gloss Stitch Cereza',
       price: 4500,
-      image: 'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Gloss Stitch Cereza/WhatsApp_Image_2026-02-23_at_11.33.32_AM.jpeg',
       inStock: true,
       category: 'maquillaje'
     },
@@ -146,7 +146,7 @@ function App() {
       id: 16,
       name: 'Labial Super Style Acabado Mate',
       price: 5000,
-      image: 'https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Labial Super Style Acabado Mate/WhatsApp_Image_2026-02-23_at_11.33.33_AM.jpeg',
       inStock: true,
       category: 'maquillaje'
     },
@@ -154,7 +154,7 @@ function App() {
       id: 17,
       name: 'Set Brochas x5',
       price: 5000,
-      image: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Set Brochas x5/WhatsApp_Image_2026-02-23_at_11.33.33_AM_(1).jpeg',
       inStock: true,
       category: 'accesorios'
     },
@@ -162,7 +162,7 @@ function App() {
       id: 18,
       name: 'Repuestos de Arqueadores',
       price: 3000,
-      image: 'https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Repuestos de Arqueadores/WhatsApp_Image_2026-02-23_at_11.33.33_AM_(2).jpeg',
       inStock: true,
       category: 'accesorios'
     },
