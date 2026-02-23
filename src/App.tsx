@@ -34,7 +34,7 @@ function App() {
       id: 2,
       name: 'Lip Matte Miss Lara (Claros)',
       price: 150,
-      image: 'https://images.pexels.com/photos/3373714/pexels-photo-3373714.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Lip Matte Miss Lara (Claros)/WhatsApp_Image_2026-02-23_at_1.50.15_PM_(2).jpeg',
       inStock: true,
       category: 'maquillaje'
     },
@@ -42,7 +42,7 @@ function App() {
       id: 3,
       name: 'Lip Matte Miss Lara (Oscuros)',
       price: 150,
-      image: 'https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Lip Matte Miss Lara (Oscuros)/WhatsApp_Image_2026-02-23_at_1.50.16_PM.jpeg',
       inStock: true,
       category: 'maquillaje'
     },
