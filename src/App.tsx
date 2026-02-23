@@ -250,7 +250,7 @@ function App() {
       id: 29,
       name: 'Contorno de Ojos Hidratante con Ácido Hialurónico',
       price: 10000,
-      image: 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Contorno de Ojos Hidratante con Ácido Hialurónico/WhatsApp_Image_2026-02-23_at_11.33.27_AM.jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
@@ -258,7 +258,7 @@ function App() {
       id: 30,
       name: 'Parches para Acné 72',
       price: 6500,
-      image: 'https://images.pexels.com/photos/7755090/pexels-photo-7755090.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Prarches para Acné 72/WhatsApp_Image_2026-02-23_at_11.33.27_AM_(1).jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
@@ -266,7 +266,7 @@ function App() {
       id: 31,
       name: 'Parches para Acné 72 Unidades',
       price: 8000,
-      image: 'https://images.pexels.com/photos/6621401/pexels-photo-6621401.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Parches para Acné 72 Unidades/WhatsApp_Image_2026-02-23_at_11.33.28_AM.jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
@@ -274,7 +274,7 @@ function App() {
       id: 32,
       name: 'Mascarillas para Puntos Negros',
       price: 1500,
-      image: 'https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Mascarillas para Puntos Negros/WhatsApp_Image_2026-02-23_at_11.33.29_AM.jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
@@ -282,7 +282,7 @@ function App() {
       id: 33,
       name: 'Gel Hidratante de Aloe Vera',
       price: 6500,
-      image: 'https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Gel Hidratante de Aloe Vera/WhatsApp_Image_2026-02-23_at_11.33.30_AM.jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
