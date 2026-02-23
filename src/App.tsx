@@ -45,6 +45,206 @@ function App() {
       image: 'https://images.pexels.com/photos/3373714/pexels-photo-3373714.jpeg?auto=compress&cs=tinysrgb&w=400',
       inStock: true,
       category: 'maquillaje'
+    },
+    {
+      id: 4,
+      name: 'Lip Matte Miss Lara (Oscuros)',
+      price: 150,
+      image: 'https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 5,
+      name: 'Rímel Voluminizador Larga Duración Sheglam',
+      price: 3500,
+      image: 'https://images.pexels.com/photos/3373730/pexels-photo-3373730.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 6,
+      name: 'Gloss Matilda',
+      price: 4000,
+      image: 'https://images.pexels.com/photos/3373714/pexels-photo-3373714.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 7,
+      name: 'Protector Solar',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/7428100/pexels-photo-7428100.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 8,
+      name: 'Parches para Ojos',
+      price: 3000,
+      image: 'https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 9,
+      name: 'Parches para Labios',
+      price: 3000,
+      image: 'https://images.pexels.com/photos/6621392/pexels-photo-6621392.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 10,
+      name: 'Gloss Minitango con Ceramida',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/2533384/pexels-photo-2533384.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 11,
+      name: 'Lip Gloss Olibolla',
+      price: 4000,
+      image: 'https://images.pexels.com/photos/5703044/pexels-photo-5703044.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 12,
+      name: 'Protector Solar Factor 50',
+      price: 10000,
+      image: 'https://images.pexels.com/photos/4046718/pexels-photo-4046718.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 13,
+      name: 'Combo Corrector y Bronzer',
+      price: 4500,
+      image: 'https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 14,
+      name: 'Parches para Acné 72',
+      price: 6500,
+      image: 'https://images.pexels.com/photos/7755090/pexels-photo-7755090.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 15,
+      name: 'Contorno de Ojos Hidratante con Ácido Hialurónico',
+      price: 10000,
+      image: 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 16,
+      name: 'Parches para Acné 72 Unidades',
+      price: 8000,
+      image: 'https://images.pexels.com/photos/6621401/pexels-photo-6621401.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 17,
+      name: 'Máscara de Pestañas Sky High Definidora',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/3686769/pexels-photo-3686769.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 18,
+      name: 'Peine y Lápiz para Ceja',
+      price: 4500,
+      image: 'https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 19,
+      name: 'Rímel Marrón',
+      price: 1500,
+      image: 'https://images.pexels.com/photos/2587376/pexels-photo-2587376.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 20,
+      name: 'Rímel Voluminizador',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 21,
+      name: 'Mascarillas para Puntos Negros',
+      price: 1500,
+      image: 'https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 22,
+      name: 'Gloss Hidratante Mágico Mariposa',
+      price: 3500,
+      image: 'https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 23,
+      name: 'Paleta de Sombras Super Style',
+      price: 6000,
+      image: 'https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 24,
+      name: 'Gel Hidratante de Aloe Vera',
+      price: 6500,
+      image: 'https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 25,
+      name: 'Fat Oils Hidratantes para Labios Miss Betty',
+      price: 3500,
+      image: 'https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 26,
+      name: 'Lip Glow Oil Miss Betty',
+      price: 4000,
+      image: 'https://images.pexels.com/photos/5703055/pexels-photo-5703055.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 27,
+      name: 'Gloss Stitch Cereza',
+      price: 4500,
+      image: 'https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 28,
+      name: 'Labial Super Style Acabado Mate',
+      price: 5000,
+      image: 'https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
     }
   ];
 
