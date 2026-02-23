@@ -7,15 +7,19 @@ interface Product {
   price: number;
   image: string;
   inStock: boolean;
+  category: 'maquillaje' | 'accesorios';
 }
 
 interface CartItem extends Product {
   quantity: number;
 }
 
+type Category = 'all' | 'maquillaje' | 'accesorios';
+
 function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [activeCategory, setActiveCategory] = useState<Category>('all');
 
   const products: Product[] = [
     {
@@ -23,13 +27,34 @@ function App() {
       name: 'Brocha de Maquillaje',
       price: 100,
       image: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400',
-      inStock: true
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 2,
+      name: 'Lip Matte Miss Bettylip',
+      price: 150,
+      image: 'https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 3,
+      name: 'Lip Matte Miss Lara (Claros)',
+      price: 150,
+      image: 'https://images.pexels.com/photos/3373714/pexels-photo-3373714.jpeg?auto=compress&cs=tinysrgb&w=400',
+      inStock: true,
+      category: 'maquillaje'
     }
   ];
 
+  const filteredProducts = activeCategory === 'all'
+    ? products
+    : products.filter(p => p.category === activeCategory);
+
   const upcomingProducts = [
     {
-      id: 2,
+      id: 100,
       name: 'Combo Brochas',
       image: 'https://images.pexels.com/photos/1115128/pexels-photo-1115128.jpeg?auto=compress&cs=tinysrgb&w=400'
     }
@@ -143,13 +168,47 @@ function App() {
 
       {/* Products Section */}
       <section className="container mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-3">✨ Productos en Stock</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-600 mx-auto rounded-full"></div>
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">✨ Productos en Stock</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-pink-600 mx-auto rounded-full mb-8"></div>
+
+          {/* Category Tabs */}
+          <div className="flex justify-center gap-4 flex-wrap mb-12">
+            <button
+              onClick={() => setActiveCategory('all')}
+              className={`px-8 py-3 rounded-full font-semibold transition-all ${
+                activeCategory === 'all'
+                  ? 'bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-lg scale-105'
+                  : 'bg-white text-pink-600 border-2 border-pink-200 hover:border-pink-400'
+              }`}
+            >
+              Todo
+            </button>
+            <button
+              onClick={() => setActiveCategory('maquillaje')}
+              className={`px-8 py-3 rounded-full font-semibold transition-all ${
+                activeCategory === 'maquillaje'
+                  ? 'bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-lg scale-105'
+                  : 'bg-white text-pink-600 border-2 border-pink-200 hover:border-pink-400'
+              }`}
+            >
+              Maquillaje
+            </button>
+            <button
+              onClick={() => setActiveCategory('accesorios')}
+              className={`px-8 py-3 rounded-full font-semibold transition-all ${
+                activeCategory === 'accesorios'
+                  ? 'bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-lg scale-105'
+                  : 'bg-white text-pink-600 border-2 border-pink-200 hover:border-pink-400'
+              }`}
+            >
+              Accesorios
+            </button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map(product => (
+          {filteredProducts.map(product => (
             <div
               key={product.id}
               className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 border-pink-100"
