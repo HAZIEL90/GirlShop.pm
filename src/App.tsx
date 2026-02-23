@@ -264,7 +264,7 @@ function App() {
     },
     {
       id: 31,
-      name: 'Parches para Acné 72 Unidades',
+      name: 'Parches para Acné 72 ',
       price: 8000,
       image: '/Parches para Acné 72 Unidades/WhatsApp_Image_2026-02-23_at_11.33.28_AM.jpeg',
       inStock: true,
