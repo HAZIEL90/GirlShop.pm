@@ -317,8 +317,8 @@ function App() {
     : products.filter(p => p.category === activeCategory);
 
   const instagramHighlights = [
-    { id: 1, title: 'Ustedes', url: 'https://www.instagram.com/stories/highlights/18036177554265658/', image: 'https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=300' },
-    { id: 2, title: 'Ustedes', url: 'https://www.instagram.com/stories/highlights/18491391925074904/', image: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=300' }
+    { id: 1, title: 'Ustedes', url: 'https://www.instagram.com/stories/highlights/18036177554265658/', image: '/image.png' },
+    { id: 2, title: 'Ustedes', url: 'https://www.instagram.com/stories/highlights/18491391925074904/', image: '/image.png' }
   ];
 
   const addToCart = (product: Product) => {
