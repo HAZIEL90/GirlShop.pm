@@ -210,7 +210,7 @@ function App() {
       id: 24,
       name: 'Brochas Flor',
       price: 6000,
-      image: 'https://images.pexels.com/photos/1115128/pexels-photo-1115128.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Brochas Flor/WhatsApp_Image_2026-02-23_at_11.33.36_AM.jpeg',
       inStock: true,
       category: 'accesorios'
     },
@@ -218,7 +218,7 @@ function App() {
       id: 25,
       name: 'Protector Solar',
       price: 5000,
-      image: 'https://images.pexels.com/photos/7428100/pexels-photo-7428100.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Protector Solar/WhatsApp_Image_2026-02-23_at_11.33.24_AM.jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
@@ -226,7 +226,7 @@ function App() {
       id: 26,
       name: 'Parches para Labios',
       price: 3000,
-      image: 'https://images.pexels.com/photos/6621392/pexels-photo-6621392.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Parches para Labios/WhatsApp_Image_2026-02-23_at_11.33.25_AM.jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
@@ -234,7 +234,7 @@ function App() {
       id: 27,
       name: 'Parches para Ojos',
       price: 3000,
-      image: 'https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Parches para Ojos/WhatsApp_Image_2026-02-23_at_11.33.25_AM_(1).jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
@@ -242,7 +242,7 @@ function App() {
       id: 28,
       name: 'Protector Solar Factor 50',
       price: 10000,
-      image: 'https://images.pexels.com/photos/4046718/pexels-photo-4046718.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Protector Solar Factor 50/WhatsApp_Image_2026-02-23_at_11.33.26_AM.jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
