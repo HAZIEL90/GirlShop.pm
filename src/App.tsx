@@ -290,7 +290,7 @@ function App() {
       id: 34,
       name: 'Perfume para Cartera Yara 35ml',
       price: 4500,
-      image: 'https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Perfume para Cartera Yara 35ml/WhatsApp_Image_2026-02-23_at_11.33.32_AM_(1).jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
@@ -298,7 +298,7 @@ function App() {
       id: 35,
       name: 'Perfume Tubo de Cartera Yara Candy 35ml',
       price: 4500,
-      image: 'https://images.pexels.com/photos/3738382/pexels-photo-3738382.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Perfume Tubo de Cartera Yara Candy 35ml/WhatsApp_Image_2026-02-23_at_11.33.32_AM_(2).jpeg',
       inStock: true,
       category: 'cuidado-personal'
     },
@@ -306,7 +306,7 @@ function App() {
       id: 36,
       name: 'Perfume Yara de Cartera 35ml',
       price: 3500,
-      image: 'https://images.pexels.com/photos/3373736/pexels-photo-3373736.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Perfume Yara de Cartera 35ml/WhatsApp_Image_2026-02-23_at_11.33.31_AM.jpeg',
       inStock: true,
       category: 'cuidado-personal'
     }
