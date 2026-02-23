@@ -50,7 +50,7 @@ function App() {
       id: 4,
       name: 'Rímel Voluminizador Larga Duración Sheglam',
       price: 3500,
-      image: 'https://images.pexels.com/photos/3373730/pexels-photo-3373730.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Rímel Voluminizador Larga Duración Sheglam/WhatsApp_Image_2026-02-23_at_2.05.06_PM.jpeg',
       inStock: true,
       category: 'maquillaje'
     },
@@ -58,7 +58,7 @@ function App() {
       id: 5,
       name: 'Gloss Matilda',
       price: 4000,
-      image: 'https://images.pexels.com/photos/3373714/pexels-photo-3373714.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Gloss Matilda/WhatsApp_Image_2026-02-23_at_2.05.07_PM.jpeg',
       inStock: true,
       category: 'maquillaje'
     },
@@ -66,7 +66,7 @@ function App() {
       id: 6,
       name: 'Gloss Minitango con Ceramida',
       price: 5000,
-      image: 'https://images.pexels.com/photos/2533384/pexels-photo-2533384.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Gloss Minitango con Ceramida/WhatsApp_Image_2026-02-23_at_2.05.07_PM_(3).jpeg',
       inStock: true,
       category: 'maquillaje'
     },
@@ -74,7 +74,7 @@ function App() {
       id: 7,
       name: 'Lip Gloss Olibolla',
       price: 4000,
-      image: 'https://images.pexels.com/photos/5703044/pexels-photo-5703044.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Lip Gloss Olibolla/WhatsApp_Image_2026-02-23_at_2.05.08_PM.jpeg',
       inStock: true,
       category: 'maquillaje'
     },
@@ -82,7 +82,7 @@ function App() {
       id: 8,
       name: 'Combo Corrector y Bronzer',
       price: 4500,
-      image: 'https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: '/Combo Corrector y Bronzer/WhatsApp_Image_2026-02-23_at_2.05.08_PM_(1).jpeg',
       inStock: true,
       category: 'maquillaje'
     },
