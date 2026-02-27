@@ -387,6 +387,32 @@ function App() {
       inStock: true,
       category: 'accesorios',
       options: ['Llavero Negro', 'Llavero Gris']
+    },
+    {
+      id: 46,
+      name: 'Llaveros Osos Escandalosos',
+      price: 4000,
+      image: '/Llaveros Osos Escandalosos/WhatsApp_Image_2026-02-27_at_6.13.39_PM.jpeg',
+      inStock: true,
+      category: 'accesorios',
+      options: ['Llavero Oso Panda', 'Llavero Oso Pardo']
+    },
+    {
+      id: 47,
+      name: 'Llaveros Bob Esponja',
+      price: 4000,
+      image: '/Llaveros Bob Esponja/WhatsApp_Image_2026-02-27_at_6.13.39_PM_(1).jpeg',
+      inStock: true,
+      category: 'accesorios',
+      options: ['Llavero Bob Esponja con Lentes', 'Llavero Bob Esponja Cacheton']
+    },
+    {
+      id: 48,
+      name: 'Llaveros Patricio',
+      price: 4000,
+      image: '/Llaveros Patricio/WhatsApp_Image_2026-02-27_at_6.13.39_PM_(2).jpeg',
+      inStock: true,
+      category: 'accesorios'
     }
   ];
 
