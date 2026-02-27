@@ -8,10 +8,13 @@ interface Product {
   image: string;
   inStock: boolean;
   category: 'maquillaje' | 'accesorios' | 'cuidado-personal';
+  options?: string[];
+  selectedOption?: string;
 }
 
 interface CartItem extends Product {
   quantity: number;
+  selectedOption?: string;
 }
 
 type Category = 'all' | 'maquillaje' | 'accesorios' | 'cuidado-personal';
@@ -20,6 +23,7 @@ function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<Category>('all');
+  const [selectedOptions, setSelectedOptions] = useState<{[key: number]: string}>({});
 
   const products: Product[] = [
     {
@@ -309,6 +313,47 @@ function App() {
       image: '/Perfume Yara de Cartera 35ml/WhatsApp_Image_2026-02-23_at_11.33.31_AM.jpeg',
       inStock: true,
       category: 'cuidado-personal'
+    },
+    {
+      id: 37,
+      name: 'Bálsamo Hidratante',
+      price: 4000,
+      image: '/Balsamo hidratante/WhatsApp_Image_2026-02-27_at_7.50.28_PM.jpeg',
+      inStock: true,
+      category: 'maquillaje',
+      options: ['Uva', 'Arándanos', 'Limón', 'Cereza']
+    },
+    {
+      id: 38,
+      name: 'Delineador de Ojos Marrón',
+      price: 2000,
+      image: '/Delineador de ojos marrón/WhatsApp_Image_2026-02-27_at_7.50.28_PM_(1).jpeg',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 39,
+      name: 'Delineador de Ojos Negro',
+      price: 2000,
+      image: '/Delineador de ojos negro/WhatsApp_Image_2026-02-27_at_7.50.28_PM_(2).jpeg',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 40,
+      name: 'Delineador de Ojos en Fibra',
+      price: 3000,
+      image: '/Delineador de ojos en fibra/WhatsApp_Image_2026-02-27_at_7.50.29_PM.jpeg',
+      inStock: true,
+      category: 'maquillaje'
+    },
+    {
+      id: 41,
+      name: 'Delineador de Labios',
+      price: 2500,
+      image: '/Delineador de labios/WhatsApp_Image_2026-02-27_at_7.50.29_PM_(1).jpeg',
+      inStock: true,
+      category: 'maquillaje'
     }
   ];
 
@@ -322,14 +367,25 @@ function App() {
   ];
 
   const addToCart = (product: Product) => {
+    const selectedOption = selectedOptions[product.id];
+
+    if (product.options && !selectedOption) {
+      alert('Por favor selecciona una opción antes de agregar al carrito');
+      return;
+    }
+
     setCart(prevCart => {
-      const existingItem = prevCart.find(item => item.id === product.id);
+      const existingItem = prevCart.find(item =>
+        item.id === product.id && item.selectedOption === selectedOption
+      );
       if (existingItem) {
         return prevCart.map(item =>
-          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+          item.id === product.id && item.selectedOption === selectedOption
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
         );
       }
-      return [...prevCart, { ...product, quantity: 1 }];
+      return [...prevCart, { ...product, selectedOption, quantity: 1 }];
     });
   };
 
@@ -359,7 +415,8 @@ function App() {
     let message = '¡Hola! 🎀 Me gustaría hacer el siguiente pedido:\n\n';
 
     cart.forEach(item => {
-      message += `• ${item.name} x${item.quantity} - $${item.price * item.quantity}\n`;
+      const optionText = item.selectedOption ? ` (${item.selectedOption})` : '';
+      message += `• ${item.name}${optionText} x${item.quantity} - $${item.price * item.quantity}\n`;
     });
 
     message += `\n*Total: $${getTotalPrice()}*\n\n¡Gracias! ✨`;
@@ -490,6 +547,25 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3">{product.name}</h3>
                 <p className="text-3xl font-bold text-pink-600 mb-4">${product.price}</p>
+
+                {product.options && (
+                  <div className="mb-4">
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      Selecciona un sabor:
+                    </label>
+                    <select
+                      value={selectedOptions[product.id] || ''}
+                      onChange={(e) => setSelectedOptions({...selectedOptions, [product.id]: e.target.value})}
+                      className="w-full p-2 border-2 border-pink-200 rounded-lg focus:border-pink-500 focus:outline-none"
+                    >
+                      <option value="">-- Selecciona --</option>
+                      {product.options.map(option => (
+                        <option key={option} value={option}>{option}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
                 <button
                   onClick={() => addToCart(product)}
                   className="w-full bg-gradient-to-r from-pink-500 to-pink-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all hover:scale-105 flex items-center justify-center gap-2"
@@ -595,8 +671,8 @@ function App() {
                 </div>
               ) : (
                 <div className="space-y-4">
-                  {cart.map(item => (
-                    <div key={item.id} className="bg-pink-50 rounded-2xl p-4 shadow-sm border-2 border-pink-100">
+                  {cart.map((item, index) => (
+                    <div key={`${item.id}-${item.selectedOption || 'default'}-${index}`} className="bg-pink-50 rounded-2xl p-4 shadow-sm border-2 border-pink-100">
                       <div className="flex gap-4">
                         <img
                           src={item.image}
@@ -604,7 +680,10 @@ function App() {
                           className="w-20 h-20 object-cover rounded-xl"
                         />
                         <div className="flex-1">
-                          <h3 className="font-bold text-gray-800 mb-2">{item.name}</h3>
+                          <h3 className="font-bold text-gray-800 mb-1">{item.name}</h3>
+                          {item.selectedOption && (
+                            <p className="text-sm text-gray-600 mb-1">Sabor: {item.selectedOption}</p>
+                          )}
                           <p className="text-pink-600 font-bold mb-3">${item.price}</p>
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-2 bg-white rounded-lg shadow-sm">
