@@ -362,6 +362,31 @@ function App() {
       image: '/Delineador de labios XL/WhatsApp_Image_2026-02-27_at_7.50.29_PM_(3).jpeg',
       inStock: true,
       category: 'maquillaje'
+    },
+    {
+      id: 43,
+      name: 'Set de Brochas x 8',
+      price: 4500,
+      image: '/Set de Brochas x 8/WhatsApp_Image_2026-02-27_at_6.13.38_PM.jpeg',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 44,
+      name: 'Set de Brochas x 8 con Estuche',
+      price: 5000,
+      image: '/Set de Brochas x 8 con estuche/WhatsApp_Image_2026-02-27_at_6.13.38_PM_(1).jpeg',
+      inStock: true,
+      category: 'accesorios'
+    },
+    {
+      id: 45,
+      name: 'Llavero de Moon Knight',
+      price: 4000,
+      image: '/Llavero de Moon kight/WhatsApp_Image_2026-02-27_at_6.13.38_PM_(2).jpeg',
+      inStock: true,
+      category: 'accesorios',
+      options: ['Llavero Negro', 'Llavero Gris']
     }
   ];
 
@@ -559,7 +584,7 @@ function App() {
                 {product.options && (
                   <div className="mb-4">
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      Selecciona un sabor:
+                      {product.name.includes('Bálsamo') ? 'Selecciona un sabor:' : 'Selecciona una opción:'}
                     </label>
                     <select
                       value={selectedOptions[product.id] || ''}
@@ -690,7 +715,9 @@ function App() {
                         <div className="flex-1">
                           <h3 className="font-bold text-gray-800 mb-1">{item.name}</h3>
                           {item.selectedOption && (
-                            <p className="text-sm text-gray-600 mb-1">Sabor: {item.selectedOption}</p>
+                            <p className="text-sm text-gray-600 mb-1">
+                              {item.name.includes('Bálsamo') ? 'Sabor: ' : 'Opción: '}{item.selectedOption}
+                            </p>
                           )}
                           <p className="text-pink-600 font-bold mb-3">${item.price}</p>
                           <div className="flex items-center justify-between">
