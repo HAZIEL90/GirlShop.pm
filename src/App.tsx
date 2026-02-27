@@ -354,6 +354,14 @@ function App() {
       image: '/Delineador de labios/WhatsApp_Image_2026-02-27_at_7.50.29_PM_(1).jpeg',
       inStock: true,
       category: 'maquillaje'
+    },
+    {
+      id: 42,
+      name: 'Delineador de Labios XL',
+      price: 2500,
+      image: '/Delineador de labios XL/WhatsApp_Image_2026-02-27_at_7.50.29_PM_(3).jpeg',
+      inStock: true,
+      category: 'maquillaje'
     }
   ];
 
